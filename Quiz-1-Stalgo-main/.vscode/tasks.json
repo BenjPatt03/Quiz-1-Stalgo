@@ -1,0 +1,83 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "backend: runserver",
+			"type": "shell",
+			"command": "${workspaceFolder}\\backend\\.venv\\Scripts\\python.exe",
+			"args": [
+				"${workspaceFolder}\\backend\\manage.py",
+				"runserver",
+				"8000"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}\\backend"
+			},
+			"isBackground": true
+		},
+		{
+			"label": "backend: seed_content",
+			"type": "shell",
+			"command": "${workspaceFolder}\\backend\\.venv\\Scripts\\python.exe",
+			"args": [
+				"${workspaceFolder}\\backend\\manage.py",
+				"seed_content"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}\\backend"
+			}
+		},
+		{
+			"label": "backend: seed_content (run)",
+			"type": "shell",
+			"command": "${workspaceFolder}\\backend\\.venv\\Scripts\\python.exe",
+			"args": [
+				"${workspaceFolder}\\backend\\manage.py",
+				"seed_content"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "backend: makemigrations api",
+			"type": "shell",
+			"command": "${workspaceFolder}\\backend\\.venv\\Scripts\\python.exe",
+			"args": [
+				"${workspaceFolder}\\backend\\manage.py",
+				"makemigrations",
+				"api"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "backend: migrate",
+			"type": "shell",
+			"command": "${workspaceFolder}\\backend\\.venv\\Scripts\\python.exe",
+			"args": [
+				"${workspaceFolder}\\backend\\manage.py",
+				"migrate"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "backend: seed_content (run)",
+			"type": "shell",
+			"command": "${workspaceFolder}\\backend\\.venv\\Scripts\\python.exe",
+			"args": [
+				"${workspaceFolder}\\backend\\manage.py",
+				"seed_content"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "backend: runserver (fixed)",
+			"type": "shell",
+			"command": "${workspaceFolder}\\backend\\.venv\\Scripts\\python.exe",
+			"args": [
+				"${workspaceFolder}\\backend\\manage.py",
+				"runserver",
+				"8000"
+			],
+			"isBackground": true
+		}
+	]
+}

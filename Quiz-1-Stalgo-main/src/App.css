@@ -1,0 +1,41 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.card,
+.form-control,
+.form-select,
+.alert,
+.badge,
+.modal-content,
+.dropdown-menu,
+.nav-pills .nav-link {
+  border-radius: 0 !important;
+}
+
+img {
+  border-radius: 0 !important;
+}
+
+/* Custom scrollbar for industrial look */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

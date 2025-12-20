@@ -1,0 +1,11 @@
+{
+  "name": "quiz-1-stalgo-wrapper",
+  "private": true,
+  "description": "Wrapper package.json so npm commands work from the outer folder (the real project is nested in Quiz-1-Stalgo-main/).",
+  "scripts": {
+    "install:frontend": "npm --prefix Quiz-1-Stalgo-main install",
+    "start": "npm --prefix Quiz-1-Stalgo-main start",
+    "build": "npm --prefix Quiz-1-Stalgo-main run build",
+    "test": "npm --prefix Quiz-1-Stalgo-main test"
+  }
+}
