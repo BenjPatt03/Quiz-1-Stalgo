@@ -7,5 +7,8 @@
     "start": "npm --prefix Quiz-1-Stalgo-main start",
     "build": "npm --prefix Quiz-1-Stalgo-main run build",
     "test": "npm --prefix Quiz-1-Stalgo-main test"
+  },
+  "dependencies": {
+    "cross-env": "^10.1.0"
   }
 }

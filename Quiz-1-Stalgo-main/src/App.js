@@ -10,12 +10,16 @@ import Contact from './pages/Contact';
 // Components
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Counter from './components/Counter';
+import AuthDemo from './components/AuthDemo';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <main>
+        <AuthDemo />
+        <Counter />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
